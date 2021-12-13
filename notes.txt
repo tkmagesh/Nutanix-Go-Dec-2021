@@ -103,3 +103,9 @@ Data Types in Golang
 
     byte (uint8)
     rune (int32) (Unicode code point)
+
+Higher Order Functions
+1. assign functions to variables
+2. anonymous Functions
+3. functions passed as arguments to other functions
+4. functions returned from other functions
