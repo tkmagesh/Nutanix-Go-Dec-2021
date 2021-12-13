@@ -109,3 +109,14 @@ Higher Order Functions
 2. anonymous Functions
 3. functions passed as arguments to other functions
 4. functions returned from other functions
+
+Collections
+    Array
+    Slice
+    Map
+
+len
+cap
+append
+copy
+delete
