@@ -1,0 +1,80 @@
+Develop Intelligence
+
+Golang
+
+Magesh
+
+Schedule:
+    Commence    : 8:30 AM
+    Tea Break   : 10:00 AM (15 mins)
+    Lunch Break : 11:30 AM (45 mins)
+    Tea Break   : 1:30 PM (15 mins)
+    End         : 3:00 PM
+
+Methodology:
+    100% Handson
+    No Presentation
+    Code : https://github.com/tkmagesh/Nutanix-Go-Dec-2021
+
+Prerequisites:
+    Experience in any of the programming languages
+
+Name
+Total Exp
+Primary Skillset
+Experience in Golang if any
+
+Why Golang?
+    a. Performance
+    b. Cloud friendly
+    c. Rich Standard Library
+    d. Concurrency
+    e. More Readable
+
+
+    1. Simplicity
+        1. 25 keywords
+        2. No classes (ONLY structs & functions)
+        3. No inheritance (only composition)
+        4. No Access modifiers 
+        5. No exceptions (only errors)
+        6. 
+    
+    2. Performance
+        1. Fast Compilation
+        2. Quick startup time
+        3. Runtime performance is on par with 'C'
+
+    3. Concurrency
+        1. Langauge built for concurrency
+            go, chan, <- (channel operator), select & range
+        2. Goroutines
+            4KB 
+            1000s of goroutines in 1 OS thread
+        3. Builtin Scheduler
+        4. Concurrency related apis in "sync" package
+
+
+Barry Shwartz
+    The Paradox of Choice
+
+Thread t = new System.Threading.Thread(obj)
+t.Start()
+
+
+func fn() {
+    fmt.Scan()
+}
+
+go fn()
+
+Go tools
+    https://go.dev/dl/
+Any Editor
+    https://code.visualstudio.com
+    goland (from jetbrains)
+
+CMD + shift + P OR CTRL + shift + P
+    Go: Install/Update tools
+    Select all
+    Hit OK
