@@ -92,4 +92,36 @@ func main() {
 	if false {
 		fmt.Println(s)
 	}
+
+	const no int = 100
+
+	/* const (
+		red   = iota
+		green = iota
+		blue  = iota
+	) */
+
+	/*
+		const (
+			red = iota
+			green
+			blue
+		)
+	*/
+
+	const (
+		red = iota + 5
+		green
+		_
+		_
+		_
+		blue
+	)
+	const (
+		pen = iota
+		pencil
+		marker
+	)
+	fmt.Printf("red = %d, green = %d, blue = %d\n", red, green, blue)
+	fmt.Printf("pen = %d, pencil = %d, marker = %d\n", pen, pencil, marker)
 }

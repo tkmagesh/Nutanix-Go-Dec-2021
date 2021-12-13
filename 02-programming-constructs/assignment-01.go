@@ -1,0 +1,1 @@
+/* Accept a number from the terminal and print whether the given number is a prime number or not */
