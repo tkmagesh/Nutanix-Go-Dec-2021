@@ -1,13 +1,22 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 )
+
+var CannotDivideByZero = errors.New("cannot divide by zero")
 
 func main() {
 
 	defer func() {
-		if err := recover(); err != nil {
+		err := recover()
+		if err == CannotDivideByZero {
+			//do something
+			return
+		}
+		if err != nil {
+			fmt.Printf("type of err = %T\n", err)
 			fmt.Println("application panicked, err = ", err)
 		}
 	}()
@@ -32,7 +41,7 @@ func divideClient(x, y int) (result int, err error) {
 
 func divide(x, y int) (result int) {
 	if y == 0 {
-		panic("Cannot divide by zero")
+		panic(CannotDivideByZero)
 	}
 	return x / y
 }
