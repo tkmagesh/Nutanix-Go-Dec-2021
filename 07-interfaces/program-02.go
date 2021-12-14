@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+type MyType struct {
+}
+
+func (myType MyType) String() string {
+	return "My Type"
+}
+
 func main() {
 	var x interface{}
 	x = 10
@@ -17,6 +24,7 @@ func main() {
 		fmt.Println("x is not an integer")
 	}
 
+	x = MyType{}
 	switch val := x.(type) {
 	case int:
 		fmt.Println("Double of x is ", val*2)
@@ -30,6 +38,8 @@ func main() {
 		fmt.Println("x is a slice of integers")
 	case map[string]int:
 		fmt.Println("x is a map of strings to integers")
+	case fmt.Stringer:
+		fmt.Println("x is a fmt.Stringer")
 	default:
 		fmt.Println("Unknown type")
 	}
