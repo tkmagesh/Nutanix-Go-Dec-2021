@@ -138,3 +138,9 @@ In 1.13 modules were introduced
         name
         target version
         module dependencies
+
+WaitGroup
+    counter
+    intialize the counter with 2
+
+    wait for the counter to become 0
