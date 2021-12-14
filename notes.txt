@@ -161,3 +161,16 @@ Channel
         In a non-buffered
             a write can be successful ONLY if a read is initiated
             a write is blocked until a 'read' is initiated
+
+Testing 
+    go test ./... -v
+
+    Coverage
+        go test -cover ./...
+
+        to generate the report
+            go test -cover ./... -coverprofile=coverage.out
+
+        to view the report
+            go tool cover -html=coverage.out
+
