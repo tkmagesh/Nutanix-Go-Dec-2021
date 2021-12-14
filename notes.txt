@@ -144,3 +144,20 @@ WaitGroup
     intialize the counter with 2
 
     wait for the counter to become 0
+
+Channel
+    ch := make(chan int)
+    <- channel operator
+    write operation
+        ch <- 100
+
+    read operation
+        x := <- ch
+
+    Point to note:
+        Channel "read" is a blocking operation
+        Channel "write" is also blocking operation (in a non-buffered channel)
+
+        In a non-buffered
+            a write can be successful ONLY if a read is initiated
+            a write is blocked until a 'read' is initiated
