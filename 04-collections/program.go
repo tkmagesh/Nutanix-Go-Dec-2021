@@ -6,7 +6,8 @@ func main() {
 	//Array
 	fmt.Println("Array")
 	//var nos [5]int
-	var nos [5]int = [5]int{3, 1, 4, 2, 5}
+	//var nos [5]int = [5]int{3, 1, 4, 2, 5}
+	nos := [5]int{3, 1, 2, 4, 5}
 	fmt.Println(nos)
 
 	//iteration using index
