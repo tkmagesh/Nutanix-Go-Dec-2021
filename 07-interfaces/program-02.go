@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 type MyType struct {
+	i int
 }
 
 func (myType MyType) String() string {
@@ -24,7 +25,9 @@ func main() {
 		fmt.Println("x is not an integer")
 	}
 
-	x = MyType{}
+	x = MyType{i: 10}
+	//x = struct{ i int }{10}
+
 	switch val := x.(type) {
 	case int:
 		fmt.Println("Double of x is ", val*2)
@@ -32,8 +35,10 @@ func main() {
 		fmt.Println("Length of x is ", len(val))
 	case bool:
 		fmt.Println("x is a boolean")
-	case struct{}:
+	case struct{ i int }:
 		fmt.Println("x is a struct")
+	case MyType:
+		fmt.Println("x is a MyType")
 	case []int:
 		fmt.Println("x is a slice of integers")
 	case map[string]int:

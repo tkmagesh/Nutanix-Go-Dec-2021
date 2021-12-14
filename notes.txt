@@ -120,3 +120,21 @@ cap
 append
 copy
 delete
+
+Before 1.13
+    $GOPATH
+        bin
+        pkg
+        src
+            github.com
+                tkmagesh
+                    MyApp1
+                        import "github.com/tkmagesh/MyApp2"
+                    MyApp2
+
+In 1.13 modules were introduced
+    go mod init github.com/tkmagesh/MyApp1
+    go.mod
+        name
+        target version
+        module dependencies
